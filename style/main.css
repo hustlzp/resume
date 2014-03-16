@@ -85,7 +85,7 @@ h3 {
   color: #aaa;
 }
 .project .thumbnail .caption .source {
-  color: #555;
+  color: #888;
   position: absolute;
   bottom: 12px;
   right: 15px;
@@ -93,4 +93,8 @@ h3 {
 }
 .project .thumbnail .caption .source:hover {
   color: #333;
+}
+.skill h3 {
+  font-size: 16px;
+  font-weight: normal;
 }
