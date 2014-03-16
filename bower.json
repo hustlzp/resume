@@ -9,6 +9,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "purecss": "0.4.2"
+    "bootstrap": "3.1.1"
   }
 }

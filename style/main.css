@@ -1,26 +1,27 @@
-.pure-g {
-  max-width: 880px;
-  margin: 0 auto;
+@media (min-width: 1200px) {
+  .container {
+    width: 992px;
+  }
 }
-.avatar {
-  width: 120px;
-  height: 120px;
+.banner {
+  padding-top: 80px;
+  height: 360px;
+  background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+}
+.banner .avatar {
+  width: 100px;
+  height: 100px;
   display: block;
-  border-radius: 60px;
+  border-radius: 50px;
   margin: 0 auto;
   box-shadow: 0 1px 2px gray;
 }
-.name {
+.banner .name {
   color: #ffffff;
   font-size: 50px;
   margin-bottom: 20px;
   text-shadow: 0 1px 1px black;
 }
-.slogan {
+.banner .slogan {
   color: #ffffff;
-}
-.banner {
-  padding-top: 100px;
-  height: 320px;
-  background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
 }
