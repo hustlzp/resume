@@ -19,10 +19,14 @@ h3 {
   margin-top: 0;
 }
 
+.tooltip .tooltip-inner {
+  border-radius: 2px;
+}
+
 .banner {
   padding-top: 80px;
   height: 340px;
-  background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+  background: transparent url('../image/bg.jpg') 0 0 no-repeat fixed;
 
   .avatar {
     width: 100px;
@@ -30,7 +34,7 @@ h3 {
     display: block;
     border-radius: 50px;
     margin: 0 auto;
-    box-shadow: 0 1px 2px gray;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   }
 
   .name {
@@ -49,7 +53,7 @@ h3 {
 .content {
   background: #ffffff;
   margin-bottom: 20px;
-  padding: 30px 30px;
+  padding: 25px 0;
 }
 
 .contacts {
@@ -63,5 +67,13 @@ h3 {
         height: 32px;
       }
     }
+  }
+}
+
+.edu-item {
+  margin-bottom: 5px;
+
+  .time {
+    font-weight: bold;
   }
 }
