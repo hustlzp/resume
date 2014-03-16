@@ -58,3 +58,13 @@ h3 {
 .edu-item .time {
   font-weight: bold;
 }
+.project .thumbnail {
+  padding: 0;
+  border-radius: 2px;
+}
+.project .thumbnail .caption {
+  padding: 10px 15px 5px 15px;
+}
+.project .thumbnail .caption h3 {
+  margin-top: 5px;
+}
