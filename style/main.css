@@ -56,7 +56,7 @@ h3 {
   width: 32px;
   height: 32px;
 }
-.desc {
+.intro {
   font-size: 15px;
   line-height: 1.5;
 }
@@ -71,8 +71,26 @@ h3 {
   border-radius: 2px;
 }
 .project .thumbnail .caption {
+  position: relative;
   padding: 10px 15px 5px 15px;
 }
 .project .thumbnail .caption h3 {
-  margin-top: 5px;
+  margin-top: 6px;
+}
+.project .thumbnail .caption .desc {
+  margin-bottom: 8px;
+}
+.project .thumbnail .caption .tec {
+  font-size: 12px;
+  color: #aaa;
+}
+.project .thumbnail .caption .source {
+  color: #555;
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  font-size: 16px;
+}
+.project .thumbnail .caption .source:hover {
+  color: #333;
 }

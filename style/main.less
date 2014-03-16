@@ -75,7 +75,7 @@ h3 {
   }
 }
 
-.desc {
+.intro {
   font-size: 15px;
   line-height: 1.5;
 }
@@ -94,10 +94,32 @@ h3 {
     border-radius: 2px;
 
     .caption {
+      position: relative;
       padding: 10px 15px 5px 15px;
 
       h3 {
-        margin-top: 5px;
+        margin-top: 6px;
+      }
+
+      .desc {
+        margin-bottom: 8px;
+      }
+
+      .tec {
+        font-size: 12px;
+        color: #aaa;
+      }
+
+      .source{
+        color: #555;
+        position: absolute;
+        bottom: 12px;
+        right: 15px;
+        font-size: 16px;
+
+        &:hover{
+          color: #333;
+        }
       }
     }
   }
