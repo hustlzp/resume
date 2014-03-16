@@ -1,0 +1,11 @@
+{
+  "name": "resume",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hustlzp/resume",
+  "authors": [
+    "hustlzp <hustlzp@qq.com>"
+  ],
+  "description": "My online resume.",
+  "license": "MIT",
+  "private": true
+}
