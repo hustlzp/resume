@@ -1,4 +1,6 @@
-hacker-resume
+resume
 =============
 
-Resume for hackers.
+My web resume.
+
+http://resume.hustlzp.com
