@@ -13,6 +13,8 @@ h3 {
 }
 .tooltip .tooltip-inner {
   border-radius: 2px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .progress {
   height: 10px;
@@ -25,12 +27,12 @@ h3 {
   background-size: 100%;
 }
 .banner .avatar {
-  width: 95px;
-  height: 95px;
+  width: 100px;
+  height: 100px;
   display: block;
   border-radius: 50px;
   margin: 0 auto;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.5);
 }
 .banner .name {
   color: #ffffff;
@@ -45,7 +47,7 @@ h3 {
 .content {
   background: #ffffff;
   margin-bottom: 20px;
-  padding: 25px 0;
+  padding: 30px 0;
 }
 .contacts {
   margin-bottom: 20px;
