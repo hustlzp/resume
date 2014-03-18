@@ -71,6 +71,9 @@ h3 {
   padding: 0;
   border-radius: 2px;
 }
+.project .thumbnail img {
+  border-bottom: 1px solid #eeeeee;
+}
 .project .thumbnail .caption {
   position: relative;
   padding: 10px 15px 5px 15px;
