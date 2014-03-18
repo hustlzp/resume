@@ -43,6 +43,7 @@ h3 {
 .banner .slogan {
   color: #ffffff;
   font-size: 18px;
+  text-shadow: 0 1px 1px gray;
 }
 .content {
   background: #ffffff;
