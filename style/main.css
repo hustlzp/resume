@@ -23,7 +23,7 @@ h3 {
 .banner {
   padding-top: 120px;
   height: 380px;
-  background: transparent url('../image/bg.jpg') 0 0 no-repeat fixed;
+  background: transparent url('../image/sea.jpg') 0 -300px no-repeat fixed;
   background-size: 100%;
 }
 .banner .avatar {
