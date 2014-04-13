@@ -20,7 +20,9 @@ function waterfall() {
   });
 
   // Wait for all images loaded
-  $('.project-wap').imagesLoaded(function (instance) {
+  $('.project-wap').imagesLoaded(function () {
+    $('.loader').hide();
+
     $('.project').each(function (index) {
       $(this).css({
         'display': 'block',
