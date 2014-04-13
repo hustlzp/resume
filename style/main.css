@@ -50,8 +50,7 @@ h3 {
   text-shadow: 0 1px 1px gray;
 }
 .content {
-  margin-bottom: 20px;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .contacts {
   margin-bottom: 20px;
@@ -113,4 +112,16 @@ h3 {
 .skill h3 {
   font-size: 16px;
   font-weight: normal;
+}
+.edu-item-wap {
+  margin-bottom: 80px;
+}
+.footer {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #999999;
+}
+.footer .version {
+  margin-bottom: 5px;
 }
