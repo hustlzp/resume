@@ -1,7 +1,5 @@
-@media (min-width: 1200px) {
-  .container {
-    width: 992px;
-  }
+.container {
+  width: 960px;
 }
 body {
   background-color: #fcfcfc;
