@@ -23,9 +23,10 @@ h3 {
   border-radius: 2px;
 }
 .banner {
+  min-width: 960px;
   padding-top: 120px;
   height: 380px;
-  background: transparent url('../image/sea.jpg') 0 -300px no-repeat fixed;
+  background: transparent url('../image/sea.jpg') 0 -300px no-repeat;
   background-size: cover;
 }
 .banner .avatar {
