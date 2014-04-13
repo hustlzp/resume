@@ -15,8 +15,7 @@ function waterfall() {
   $('.project').each(function (index) {
     $(this).css({
       'width': width + 'px',
-      'display': 'none',
-      'position': 'absolute'
+      'display': 'none'
     });
   });
 
