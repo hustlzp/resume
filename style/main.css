@@ -92,7 +92,7 @@ h3 {
   padding: 0;
   border-radius: 0;
   border: 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 .project-wap .project img {
   border-bottom: 1px solid #eeeeee;
