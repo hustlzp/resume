@@ -26,7 +26,7 @@ h3 {
   min-width: 1020px;
   padding-top: 120px;
   height: 380px;
-  background: transparent url('../image/sea_new.jpg') 0 0 no-repeat;
+  background: transparent url('../image/sea.jpg') 0 0 no-repeat;
   background-size: cover;
 }
 .banner .avatar {
@@ -78,35 +78,39 @@ h3 {
 .edu-item .time {
   font-weight: bold;
 }
-.project .thumbnail {
+.project-wap {
+  position: relative;
+}
+.project-wap .project {
+  position: absolute;
   padding: 0;
   border-radius: 2px;
 }
-.project .thumbnail img {
+.project-wap .project img {
   border-bottom: 1px solid #eeeeee;
 }
-.project .thumbnail .caption {
+.project-wap .project .caption {
   position: relative;
   padding: 10px 15px 5px 15px;
 }
-.project .thumbnail .caption h3 {
+.project-wap .project .caption h3 {
   margin-top: 6px;
 }
-.project .thumbnail .caption .desc {
+.project-wap .project .caption .desc {
   margin-bottom: 8px;
 }
-.project .thumbnail .caption .tec {
+.project-wap .project .caption .tec {
   font-size: 12px;
   color: #aaa;
 }
-.project .thumbnail .caption .source {
+.project-wap .project .caption .source {
   color: #888;
   position: absolute;
   bottom: 12px;
   right: 15px;
   font-size: 16px;
 }
-.project .thumbnail .caption .source:hover {
+.project-wap .project .caption .source:hover {
   color: #333;
 }
 .skill h3 {
