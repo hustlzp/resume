@@ -1,6 +1,6 @@
-resume
+Resume
 =============
 
-My web resume.
+My online resume.
 
 http://resume.hustlzp.com
