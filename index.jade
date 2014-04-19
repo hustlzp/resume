@@ -1,0 +1,172 @@
+doctype html
+
+head
+  title 刘志鹏的个人简历
+  meta(http-equiv="Content-Type" content="text/html;charset=utf-8")
+  link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+  link(rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css")
+  link(rel="stylesheet" href="style/utils.css")
+  link(rel="stylesheet" href="style/main.css")
+  script(src="bower_components/jquery/dist/jquery.min.js")
+  script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+  script(type="text/javascript" src="bower_components/eventEmitter/EventEmitter.min.js")
+  script(type="text/javascript" src="bower_components/eventie/eventie.js")
+  script(src="bower_components/imagesloaded/imagesloaded.js")
+  script(src="script/main.js")
+
+body
+  a(href='https://github.com/hustlzp/resume', target='_blank')
+    img(style='position: absolute; top: 0; right: 0; border: 0;', src='https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png')
+  .banner
+    img.avatar(src='http://hustlzp-resume.qiniudn.com/avatar.jpg', alt='hustlzp')
+    h1.text-center.name hustlzp
+    p.text-center.slogan 以免当我生命结束时，发现自己，从来没有活过。
+  .container.content
+    .row
+      .col-xs-12.text-center
+        ul.contacts.list-inline
+          each contact in contacts
+            li
+              a(href=contact.link, target='_blank', title=contact.title)
+                img(src=contact.image, alt=contact.title)
+    .col-xs-8.col-xs-offset-2
+      p.intro
+        | Hello，我是刘志鹏，90年生，目前就读于湖北省关山口男职，研究生二年级。业余大爱Web开发，毕业后决定放弃本专业7年所学，转型互联网。如孟子云：虽千万人，吾往矣。
+    .row
+      .col-xs-12
+        h2.text-center 作品
+    .project-wap
+      img.loader(src='image/ajax-loader.gif', alt='')
+      .project.thumbnail
+        a(href='http://www.thu3d.com', title='乐创', target='_blank')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/lemaker.jpg', alt='')
+        .caption
+          h3
+            a(href='http://www.thu3d.com', target='_blank') 乐创
+          p.desc 3D打印团队“乐创”官网。
+          p.tec Flask / MySQL / Redis
+      .project.thumbnail
+        a(href='http://www.xichuangzhu.com', title='西窗烛', target='_blank')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/xcz.jpg', alt='')
+        .caption
+          h3
+            a(href='http://www.xichuangzhu.com', target='_blank') 西窗烛
+          p.desc 品味传统文学之美。
+          p.tec Flask / MySQL
+          a.source(href='https://github.com/hustlzp/xichuangzhu', target='_blank')
+            i.fa.fa-github
+      .project.thumbnail
+        a(href='http://www.transy.org', title='Transy', target='_blank')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/transy.png', alt='')
+        .caption
+          h3
+            a(href='http://www.transy.org', target='_blank') Transy
+          p.desc 中英翻译助手。
+          p.tec NodeJS / MongoDB
+          a.source(href='https://github.com/hustlzp/transy', target='_blank')
+            i.fa.fa-github
+      .project.thumbnail
+        a(href='http://www.optico.com.cn', title='Optico', target='_blank')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/optico.png', alt='')
+        .caption
+          h3
+            a(href='http://www.optico.com.cn', target='_blank') Optico
+          p.desc Website for Optico Company.
+          p.tec Flask / MySQL / SendCloud
+          a.source(href='https://github.com/hustlzp/optico', target='_blank')
+            i.fa.fa-github
+      .project.thumbnail
+        a(href='http://www.yprogrammer.com', title='YProgrammer', target='_blank')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/yp.png', alt='')
+        .caption
+          h3
+            a(href='http://www.yprogrammer.com', target='_blank') YProgrammer
+          p.desc 分享优质Web开发资源。
+          p.tec Django / MySQL
+          a.source(href='https://github.com/hustlzp/yprogrammer', target='_blank')
+            i.fa.fa-github
+      // <div class="project thumbnail">
+      // <a href="https://github.com/hustlzp/jquery-s2t" title="jquery-s2t" target="_blank">
+      // <img src="http://placehold.it/320x200" alt="" class="img-responsive"/>
+      // </a>
+      // <div class="caption">
+      // <h3><a href="https://github.com/hustlzp/jquery-s2t" target="_blank">jquery-s2t</a></h3>
+      // <p class="desc">用于中文简繁转换的jQuery插件。</p>
+      // <p class="tec">JavaScript / jQuery</p>
+      // </div>
+      // </div>
+      .project.thumbnail
+        a(href='http://hustlzp.github.io/aod/', title='AOD', target='_blank')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/aod.png', alt='')
+        .caption
+          h3
+            a(href='http://hustlzp.github.io/aod/', target='_blank') AOD
+          p.desc Demo for AOD Company.
+          p.tec HTML / CSS / JavaScript
+          a.source(href='https://github.com/hustlzp/aod/tree/gh-pages', target='_blank')
+            i.fa.fa-github
+    .row
+      .col-xs-12
+        h2.text-center 技能
+    .row
+      .col-xs-5.col-xs-offset-1.skill
+        h3 Python
+        .progress
+          .progress-bar.progress-bar-success(style='width: 60%')
+      .col-xs-5.skill
+        h3 NodeJS
+        .progress
+          .progress-bar.progress-bar-success(style='width: 40%')
+      .col-xs-5.col-xs-offset-1.skill
+        h3 JavaScript
+        .progress
+          .progress-bar.progress-bar-success(style='width: 45%')
+      .col-xs-5.skill
+        h3 HTML / CSS
+        .progress
+          .progress-bar.progress-bar-success(style='width: 55%')
+      .col-xs-5.col-xs-offset-1.skill
+        h3 Git
+        .progress
+          .progress-bar.progress-bar-success(style='width: 50%')
+      .col-xs-5.skill
+        h3 MySQL / MongoDB / Redis
+        .progress
+          .progress-bar.progress-bar-success(style='width: 30%')
+    .row
+      .col-xs-12
+        h2.text-center 阅读
+    .row.books(style='margin-bottom: 25px')
+      .col-xs-2.col-xs-offset-1
+        a(href='http://book.douban.com/subject/2278402/', target='_blank', title='小王子')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/prince.jpg', alt='小王子')
+      .col-xs-2
+        a(href='http://book.douban.com/subject/4898627/', target='_blank', title='禅者的初心')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/zen.jpg', alt='禅者的初心')
+      .col-xs-2
+        a(href='http://book.douban.com/subject/6021440/', target='_blank', title='黑客与画家')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/hp.jpg', alt='黑客与画家')
+      .col-xs-2
+        a(href='http://book.douban.com/subject/1860946/', target='_blank', title='白领')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/white-collar.jpg', alt='白领')
+      .col-xs-2
+        a(href='http://book.douban.com/subject/4230237/', target='_blank', title='设计中的设计')
+          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/design.jpg', alt='设计中的设计')
+    .row
+      .col-xs-12
+        h2.text-center 教育
+    .edu-item-wap
+      .row.edu-item
+        .col-xs-5.text-right.time
+          | 2012.9 - 至今
+        .col-xs-7
+          | 华中科技大学，光电学院 光电信息工程，硕士
+      .row.edu-item
+        .col-xs-5.text-right.time
+          | 2008.9 - 2012.6
+        .col-xs-7
+          | 华中科技大学，光电学院 光电信息工程，学士
+  .footer
+    .container
+      .version Last update: 2014-04-13
+      .copyright 2014 © by hustlzp
