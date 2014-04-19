@@ -36,55 +36,19 @@ body
       .col-xs-12
         h2.text-center 作品
     .project-wap
-      img.loader(src='image/ajax-loader.gif', alt='')
-      .project.thumbnail
-        a(href='http://www.thu3d.com', title='乐创', target='_blank')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/lemaker.jpg', alt='')
-        .caption
-          h3
-            a(href='http://www.thu3d.com', target='_blank') 乐创
-          p.desc 3D打印团队“乐创”官网。
-          p.tec Flask / MySQL / Redis
-      .project.thumbnail
-        a(href='http://www.xichuangzhu.com', title='西窗烛', target='_blank')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/xcz.jpg', alt='')
-        .caption
-          h3
-            a(href='http://www.xichuangzhu.com', target='_blank') 西窗烛
-          p.desc 品味传统文学之美。
-          p.tec Flask / MySQL
-          a.source(href='https://github.com/hustlzp/xichuangzhu', target='_blank')
-            i.fa.fa-github
-      .project.thumbnail
-        a(href='http://www.transy.org', title='Transy', target='_blank')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/transy.png', alt='')
-        .caption
-          h3
-            a(href='http://www.transy.org', target='_blank') Transy
-          p.desc 中英翻译助手。
-          p.tec NodeJS / MongoDB
-          a.source(href='https://github.com/hustlzp/transy', target='_blank')
-            i.fa.fa-github
-      .project.thumbnail
-        a(href='http://www.optico.com.cn', title='Optico', target='_blank')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/optico.png', alt='')
-        .caption
-          h3
-            a(href='http://www.optico.com.cn', target='_blank') Optico
-          p.desc Website for Optico Company.
-          p.tec Flask / MySQL / SendCloud
-          a.source(href='https://github.com/hustlzp/optico', target='_blank')
-            i.fa.fa-github
-      .project.thumbnail
-        a(href='http://www.yprogrammer.com', title='YProgrammer', target='_blank')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/yp.png', alt='')
-        .caption
-          h3
-            a(href='http://www.yprogrammer.com', target='_blank') YProgrammer
-          p.desc 分享优质Web开发资源。
-          p.tec Django / MySQL
-          a.source(href='https://github.com/hustlzp/yprogrammer', target='_blank')
-            i.fa.fa-github
+      img.loader(src='image/ajax-loader.gif', alt='Loader')
+      each p in projects
+        .project.thumbnail
+          a(href=p.link, title=p.title, target='_blank')
+            img.img-responsive(src=p.image, alt=p.title)
+          .caption
+            h3
+              a(href=p.link, target='_blank')= p.title
+            p.desc= p.desc
+            p.tec= p.tec
+            if p.source
+              a.source(href=p.source, target='_blank')
+                i.fa.fa-github
       // <div class="project thumbnail">
       // <a href="https://github.com/hustlzp/jquery-s2t" title="jquery-s2t" target="_blank">
       // <img src="http://placehold.it/320x200" alt="" class="img-responsive"/>
@@ -95,78 +59,35 @@ body
       // <p class="tec">JavaScript / jQuery</p>
       // </div>
       // </div>
-      .project.thumbnail
-        a(href='http://hustlzp.github.io/aod/', title='AOD', target='_blank')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/aod.png', alt='')
-        .caption
-          h3
-            a(href='http://hustlzp.github.io/aod/', target='_blank') AOD
-          p.desc Demo for AOD Company.
-          p.tec HTML / CSS / JavaScript
-          a.source(href='https://github.com/hustlzp/aod/tree/gh-pages', target='_blank')
-            i.fa.fa-github
     .row
       .col-xs-12
         h2.text-center 技能
     .row
-      .col-xs-5.col-xs-offset-1.skill
-        h3 Python
-        .progress
-          .progress-bar.progress-bar-success(style='width: 60%')
-      .col-xs-5.skill
-        h3 NodeJS
-        .progress
-          .progress-bar.progress-bar-success(style='width: 40%')
-      .col-xs-5.col-xs-offset-1.skill
-        h3 JavaScript
-        .progress
-          .progress-bar.progress-bar-success(style='width: 45%')
-      .col-xs-5.skill
-        h3 HTML / CSS
-        .progress
-          .progress-bar.progress-bar-success(style='width: 55%')
-      .col-xs-5.col-xs-offset-1.skill
-        h3 Git
-        .progress
-          .progress-bar.progress-bar-success(style='width: 50%')
-      .col-xs-5.skill
-        h3 MySQL / MongoDB / Redis
-        .progress
-          .progress-bar.progress-bar-success(style='width: 30%')
+      .col-xs-10.col-xs-offset-1
+        .row
+          each skill, index in skills
+            .col-xs-6.skill
+              h3= skill.name
+              .progress
+                .progress-bar.progress-bar-success(style='width: ' + skill.degree + '%')
     .row
       .col-xs-12
         h2.text-center 阅读
-    .row.books(style='margin-bottom: 25px')
-      .col-xs-2.col-xs-offset-1
-        a(href='http://book.douban.com/subject/2278402/', target='_blank', title='小王子')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/prince.jpg', alt='小王子')
-      .col-xs-2
-        a(href='http://book.douban.com/subject/4898627/', target='_blank', title='禅者的初心')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/zen.jpg', alt='禅者的初心')
-      .col-xs-2
-        a(href='http://book.douban.com/subject/6021440/', target='_blank', title='黑客与画家')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/hp.jpg', alt='黑客与画家')
-      .col-xs-2
-        a(href='http://book.douban.com/subject/1860946/', target='_blank', title='白领')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/white-collar.jpg', alt='白领')
-      .col-xs-2
-        a(href='http://book.douban.com/subject/4230237/', target='_blank', title='设计中的设计')
-          img.img-responsive(src='http://hustlzp-resume.qiniudn.com/design.jpg', alt='设计中的设计')
+    .row.books
+      each book, index in books
+        -var cls = (index === 0) ? 'col-xs-2 col-xs-offset-1' : 'col-xs-2'
+        div(class=cls)
+          a(href=book.link, target='_blank', title=book.title)
+            img.img-responsive(src=book.image, alt=book.title)
     .row
       .col-xs-12
         h2.text-center 教育
     .edu-item-wap
-      .row.edu-item
-        .col-xs-5.text-right.time
-          | 2012.9 - 至今
-        .col-xs-7
-          | 华中科技大学，光电学院 光电信息工程，硕士
-      .row.edu-item
-        .col-xs-5.text-right.time
-          | 2008.9 - 2012.6
-        .col-xs-7
-          | 华中科技大学，光电学院 光电信息工程，学士
+      each edu in educations
+        .row.edu-item
+          .col-xs-5.text-right.time= edu.period
+          .col-xs-7= edu.title
   .footer
     .container
-      .version Last update: 2014-04-13
+      .version Last update: #{date}
       .copyright 2014 © by hustlzp
