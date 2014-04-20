@@ -32,7 +32,7 @@ module.exports = {
     }
   ],
 
-  // 项目
+  // 作品
   projects: [
     {
       title: '乐创',
@@ -118,7 +118,7 @@ module.exports = {
     }
   ],
 
-  // 书
+  // 阅读
   books: [
     {
       title: '小王子',
