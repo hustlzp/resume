@@ -27,26 +27,26 @@ module.exports = {
     {
       title: 'Blog',
       link: 'http://hustlzp.com',
-      image: 'image/icons/blog.png'
+      image: 'http://hustlzp-resume.qiniudn.com/blog.png'
     },
     {
       title: 'GitHub',
       link: 'https://github.com/hustlzp',
-      image: 'image/icons/github.png'
+      image: 'http://hustlzp-resume.qiniudn.com/github.png'
     },
     {
       title: 'V2EX',
       link: 'https://www.v2ex.com/member/hustlzp',
-      image: 'image/icons/v2ex.png'
+      image: 'http://hustlzp-resume.qiniudn.com/v2ex.png'
     },
     {
       title: '豆瓣',
       link: 'http://www.douban.com/people/hustlzp',
-      image: 'image/icons/douban.png'
+      image: 'http://hustlzp-resume.qiniudn.com/douban.png'
     },
     {
       title: 'hustlzp@qq.com',
-      image: 'image/icons/email.png'
+      image: 'http://hustlzp-resume.qiniudn.com/email.png'
     }
   ],
 
