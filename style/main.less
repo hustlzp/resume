@@ -101,8 +101,34 @@ h3 {
 .books {
   margin-bottom: 20px;
 
-  img {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  .book {
+    display: block;
+    position: relative;
+
+    &:hover {
+      .review {
+        opacity: 0.9;
+      }
+    }
+
+    img {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .review {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      padding: 10px 12px;
+      font-size: 12px;
+      background-color: #fff;
+      opacity: 0;
+      color: #333333;
+      border-top: 1px solid #eeeeee;
+      -webkit-transition: opacity 0.1s linear;
+      transition: opacity 0.1s linear;
+    }
   }
 }
 

@@ -3,6 +3,7 @@ var date = new Date()
 module.exports = {
   pretty: true,
   date: date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate(),
+
   // 联系方式
   contacts: [
     {
@@ -30,6 +31,7 @@ module.exports = {
       image: 'image/icons/email.png'
     }
   ],
+
   // 项目
   projects: [
     {
@@ -60,7 +62,7 @@ module.exports = {
       desc: 'Website for Optico Company.',
       link: 'http://www.optico.com.cn',
       image: 'http://hustlzp-resume.qiniudn.com/optico.png',
-      tec: 'Flask / MySQL / SendCloud',
+      tec: 'Flask / MySQL',
       source: 'https://github.com/hustlzp/optico'
     },
     {
@@ -80,6 +82,7 @@ module.exports = {
       source: 'https://github.com/hustlzp/aod/tree/gh-pages'
     }
   ],
+
   // 技能
   skills: [
     {
@@ -107,34 +110,41 @@ module.exports = {
       degree: '30'
     }
   ],
+
   // 书
   books: [
     {
       title: '小王子',
       image: 'http://hustlzp-resume.qiniudn.com/prince.jpg',
-      link: 'http://book.douban.com/subject/2278402'
+      link: 'http://book.douban.com/subject/2278402',
+      review: '因为我倾听过她的怨艾和自诩，甚至有时我聆听着她的沉默。因为她是我的玫瑰。'
     },
     {
       title: '禅者的初心',
       image: 'http://hustlzp-resume.qiniudn.com/zen.jpg',
-      link: 'http://book.douban.com/subject/4898627'
+      link: 'http://book.douban.com/subject/4898627',
+      review: '初学者的心空空如也，不受各种习性的羁绊。'
     },
     {
       title: '黑客与画家',
       image: 'http://hustlzp-resume.qiniudn.com/hp.jpg',
-      link: 'http://book.douban.com/subject/6021440'
+      link: 'http://book.douban.com/subject/6021440',
+      review: 'Make things people want.'
     },
     {
       title: '白领',
       image: 'http://hustlzp-resume.qiniudn.com/white-collar.jpg',
-      link: 'http://book.douban.com/subject/1860946'
+      link: 'http://book.douban.com/subject/1860946',
+      review: '在像手工艺一类的工作中，游戏的质朴的自我表现和工作的未来价值的创造是融合在一起的。'
     },
     {
       title: '设计中的设计',
       image: 'http://hustlzp-resume.qiniudn.com/design.jpg',
-      link: 'http://book.douban.com/subject/4230237'
+      link: 'http://book.douban.com/subject/4230237',
+      review: '在我们的工作中，资本主义的逻辑被人性的逻辑微微超越'
     }
   ],
+
   // 教育
   educations: [
     {
