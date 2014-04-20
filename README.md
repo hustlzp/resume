@@ -3,10 +3,11 @@ Resume
 
 http://resume.hustlzp.com
 
-My online resume, lovely build with Node and Jade.
+My online resume, lovely build with Node, Gulp and Jade.
 
 Usage:
 
 * `bower install`
 * `npm install`
-* `node gene.js`
+* `sudo npm install -g gulp`
+* `gulp`
