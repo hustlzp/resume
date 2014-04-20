@@ -7,9 +7,15 @@ var html_file = 'index.html';
 var jade_file = 'index.jade';
 
 gulp.task('build', function () {
-  // 重新载入data.js
-  delete require.cache[require.resolve('./' + data_file)];
-  var data = require('./' + data_file);
+  // 尝试重新载入data.js
+  try {
+    delete require.cache[require.resolve('./' + data_file)];
+    var data = require('./' + data_file);
+  } catch (error) {
+    console.log(new Date() + ' - ERROR');
+    fs.writeFile(html_file, error);
+    return;
+  }
 
   jade.renderFile(jade_file, data, function (err, html) {
     if (err) {
