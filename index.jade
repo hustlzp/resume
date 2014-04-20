@@ -1,7 +1,7 @@
 doctype html
 
 head
-  title 刘志鹏的个人简历
+  title #{cn_name}的个人简历
   meta(http-equiv="Content-Type", content="text/html;charset=utf-8")
   link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
   link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css")
@@ -15,12 +15,12 @@ head
   script(src="script/main.js")
 
 body
-  a(href='https://github.com/hustlzp/resume', target='_blank')
+  a(href=code, target='_blank')
     img(style='position: absolute; top: 0; right: 0; border: 0;', src='https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png')
-  .banner
-    img.avatar(src='http://hustlzp-resume.qiniudn.com/avatar.jpg', alt='hustlzp')
-    h1.text-center.name hustlzp
-    p.text-center.slogan 以免当我生命结束时，发现自己，从来没有活过。
+  .banner(style="background-image: url('" + bg + "')")
+    img.avatar(src=avatar, alt='hustlzp')
+    h1.text-center.name= en_name
+    p.text-center.slogan= motto
   .container.content
     .row
       .col-xs-12.text-center
@@ -30,8 +30,7 @@ body
               a(href=contact.link, target='_blank', title=contact.title)
                 img(src=contact.image, alt=contact.title)
     .col-xs-8.col-xs-offset-2
-      p.intro
-        | Hello，我是刘志鹏，90年生，目前就读于湖北省关山口男职，研究生二年级。业余大爱Web开发，毕业后决定放弃本专业7年所学，转型互联网。如孟子云：虽千万人，吾往矣。
+      p.intro= desc
     .row
       .col-xs-12
         h2.text-center 求职意向
@@ -40,13 +39,8 @@ body
         img(src='http://hustlzp-resume.qiniudn.com/shanghai.gif', class='map img-responsive')
       .col-xs-6
         ul
-          li
-            b 上海
-          li 看重专业出身，请勿扰
-          li 公司产品的价值观与个人价值观没有严重分歧
-          li 有神一样的队友，能够得到快速成长
-          li 开明、活跃、年轻的团队氛围
-          li 符合行业水平的薪酬
+          each e in expectations
+            li= e
     .row
       .col-xs-12
         h2.text-center 作品
@@ -95,5 +89,5 @@ body
           .col-xs-7= edu.title
   .footer
     .container
-      .version Last update: #{date}
-      .copyright 2014 © by hustlzp
+      .version Last update: #{update}
+      .copyright 2014 © by #{en_name}
