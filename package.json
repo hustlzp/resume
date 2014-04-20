@@ -3,8 +3,7 @@
   "version": "0.3.0",
   "description": "My online resume, lovely build with Node and Jade.",
   "main": "gene.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "~3.6.1",
     "jade": "~1.3.1"
