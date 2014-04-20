@@ -92,9 +92,9 @@ body
       each book, index in books
         -var cls = (index === 0) ? 'col-xs-2 col-xs-offset-1' : 'col-xs-2'
         div(class=cls)
-          a(href=book.link, target='_blank', title=book.title, class='book')
+          a(href=book.link, target='_blank', class='book')
             img.img-responsive(src=book.image, alt=book.title)
-            div.review= book.review
+            div.quote= book.quote
     .row
       .col-xs-12
         h2.text-center 教育
