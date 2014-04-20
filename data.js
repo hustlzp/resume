@@ -1,4 +1,4 @@
-var date = new Date()
+var date = new Date();
 
 module.exports = {
   // 输出友好格式的HTML
@@ -181,4 +181,4 @@ module.exports = {
       title: '华中科技大学，光电学院 光电信息工程，学士'
     }
   ]
-}
+};
