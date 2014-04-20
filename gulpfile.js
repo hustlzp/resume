@@ -2,32 +2,35 @@ var fs = require('fs');
 var jade = require('jade');
 var gulp = require('gulp');
 
-var data_file = 'data.js';
-var html_file = 'index.html';
-var jade_file = 'index.jade';
+var dataFile = 'data.js';
+var htmlFile = 'index.html';
+var jadeFile = 'index.jade';
+
+// 将错误信息记录到htmlFile，以方便调试
+function logError(err) {
+  console.log(new Date() + ' - ERROR');
+  fs.writeFile(htmlFile, err);
+}
 
 gulp.task('build', function () {
   // 尝试重新载入data.js
   try {
-    delete require.cache[require.resolve('./' + data_file)];
-    var data = require('./' + data_file);
-  } catch (error) {
-    console.log(new Date() + ' - ERROR');
-    fs.writeFile(html_file, error);
+    delete require.cache[require.resolve('./' + dataFile)];
+    var data = require('./' + dataFile);
+  } catch (err) {
+    logError(err);
     return;
   }
 
-  jade.renderFile(jade_file, data, function (err, html) {
+  jade.renderFile(jadeFile, data, function (err, html) {
     if (err) {
-      console.log(new Date() + ' - ERROR');
-      fs.writeFile(html_file, err);
+      logError(err);
       return;
     }
 
-    fs.writeFile(html_file, html, function (err) {
+    fs.writeFile(htmlFile, html, function (err) {
       if (err) {
-        console.log(new Date() + ' - ERROR');
-        fs.writeFile(html_file, err);
+        logError(err);
         return;
       }
 
@@ -37,7 +40,7 @@ gulp.task('build', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch([jade_file, data_file], ['build']);
+  gulp.watch([jadeFile, dataFile], ['build']);
 });
 
 gulp.task('default', ['build', 'watch']);
