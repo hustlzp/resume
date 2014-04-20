@@ -133,7 +133,7 @@ module.exports = {
       title: '设计中的设计',
       image: 'http://hustlzp-resume.qiniudn.com/design.jpg',
       link: 'http://book.douban.com/subject/4230237'
-    },
+    }
   ],
   // 教育
   educations: [
