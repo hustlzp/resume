@@ -15,16 +15,18 @@ gulp.task('build', function () {
       if (err) {
         console.log(new Date() + ' - ERROR');
         fs.writeFile('index.html', err);
-      } else {
-        fs.writeFile('index.html', html, function (err) {
-          if (err) {
-            console.log(new Date() + ' - ERROR');
-            fs.writeFile('index.html', err);
-          } else {
-            console.log(new Date() + ' - SAVED');
-          }
-        });
+        return;
       }
+
+      fs.writeFile('index.html', html, function (err) {
+        if (err) {
+          console.log(new Date() + ' - ERROR');
+          fs.writeFile('index.html', err);
+          return;
+        }
+
+        console.log(new Date() + ' - SAVED');
+      });
     });
   });
 });
