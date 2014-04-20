@@ -3,16 +3,23 @@ var date = new Date();
 module.exports = {
   // 输出友好格式的HTML
   pretty: true,
+
+  // 基本信息
   cn_name: '刘志鹏',
   en_name: 'hustlzp',
   avatar: 'http://hustlzp-resume.qiniudn.com/avatar.jpg',
-  bg: 'http://hustlzp-resume.qiniudn.com/sea.jpg',
   motto: '以免当我生命结束时，发现自己，从来没有活过。',
   desc: 'Hello，我是刘志鹏，90年生，目前就读于湖北省关山口男职，研究生二年级。业余大爱Web开发，毕业后决定放弃本专业7年所学，转型互联网。如孟子云：虽千万人，吾往矣。',
+
+  // banner背景图片
+  bg: 'http://hustlzp-resume.qiniudn.com/sea.jpg',
+  // 页面代码的GitHub地址
   code: 'https://github.com/hustlzp/resume',
+  // 页面最后更新时间
   update: date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate(),
 
   // 求职意向
+  city_image: 'http://hustlzp-resume.qiniudn.com/shanghai.gif',
   expectations: [
     '城市：上海',
     '看重专业出身，请勿扰',
