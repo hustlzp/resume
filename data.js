@@ -94,7 +94,7 @@ module.exports = {
   skills: [
     {
       name: 'Python',
-      degree: '60'
+      degree: '55'
     },
     {
       name: 'NodeJS',
@@ -109,8 +109,8 @@ module.exports = {
       degree: '55'
     },
     {
-      name: 'Git',
-      degree: '50'
+      name: 'Ruby on Rails',
+      degree: '20'
     },
     {
       name: 'MySQL / MongoDB / Redis',

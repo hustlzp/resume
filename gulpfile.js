@@ -1,7 +1,7 @@
 var fs = require('fs');
 var jade = require('jade');
-var data = require('./data.js');
 var gulp = require('gulp');
+var data = require('./data.js');
 
 var path = ['index.jade', 'data.js'];
 
