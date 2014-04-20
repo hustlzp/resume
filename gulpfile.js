@@ -1,27 +1,28 @@
 var fs = require('fs');
 var jade = require('jade');
 var gulp = require('gulp');
-var data = require('./data.js');
 
-var path = ['index.jade', 'data.js'];
+var data_file = 'data.js';
+var html_file = 'index.html';
+var jade_file = 'index.jade';
 
 gulp.task('build', function () {
-  gulp.watch(path, {}, function () {
-    // 重新导入data.js
-    delete require.cache[require.resolve('./data.js')];
-    data = require('./data.js');
+  gulp.watch([jade_file, data_file], {}, function () {
+    // 重新载入data.js
+    delete require.cache[require.resolve('./' + data_file)];
+    var data = require('./' + data_file);
 
-    jade.renderFile('index.jade', data, function (err, html) {
+    jade.renderFile(jade_file, data, function (err, html) {
       if (err) {
         console.log(new Date() + ' - ERROR');
-        fs.writeFile('index.html', err);
+        fs.writeFile(html_file, err);
         return;
       }
 
-      fs.writeFile('index.html', html, function (err) {
+      fs.writeFile(html_file, html, function (err) {
         if (err) {
           console.log(new Date() + ' - ERROR');
-          fs.writeFile('index.html', err);
+          fs.writeFile(html_file, err);
           return;
         }
 

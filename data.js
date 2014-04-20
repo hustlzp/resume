@@ -99,13 +99,6 @@ module.exports = {
       tec: 'HTML / CSS / JavaScript',
       source: 'https://github.com/hustlzp/aod/tree/gh-pages'
     }
-    // {
-    //   title: 'jquery-s2t',
-    //   desc: '用于中文简繁转换的jQuery插件。',
-    //   link: 'https://github.com/hustlzp/jquery-s2t',
-    //   image: 'http://placehold.it/320x200',
-    //   tec: 'JavaScript / jQuery',
-    // }
   ],
 
   // 技能
