@@ -3,11 +3,14 @@ Resume
 
 http://resume.hustlzp.com
 
-My online resume, lovely build with Node and served by GitHub.
+My online resume, built with NodeJS and served by GitHub.
 
 Usage:
 
-* install node
+* Fork and clone to local
+* Install node
 * `npm install` and `sudo npm install -g gulp`
-* fill your personal information to `data.js`
+* Fill up your personal info in `data.js`
 * `gulp`
+* Commit and push
+* Wait for GitHub to build pages
