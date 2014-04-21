@@ -157,7 +157,7 @@ module.exports = {
       quote: '非常严格的品味，再加上实现这种品味的能力。'
     },
     {
-      title: '白领',
+      title: '白领：美国的中产阶级',
       image: 'http://hustlzp-resume.qiniudn.com/white-collar.jpg',
       link: 'http://book.douban.com/subject/1860946',
       quote: '在像手工艺一类的工作中，游戏的质朴的自我表现和工作的未来价值的创造是融合在一起的。'
