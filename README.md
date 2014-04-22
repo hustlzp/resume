@@ -17,5 +17,5 @@ Wanna to bind your own subdomain(such as `resume.hustlzp.com`)?
 
 * Checkout branch `gh-pages`
 * Replace with your domain in file `CNAME`
-* Configure your domain's DNS records to add a CNAME record pointing to `your_username.github.io`
+* Configure your domain's DNS to add a CNAME record pointing to `your_username.github.io`
 * Wait for the new record taking effect :beer:
