@@ -1,9 +1,10 @@
-Resume
-=============
+#Resume
 
 http://resume.hustlzp.com
 
 My online resume, built with Node.js and served by GitHub Pages.
+
+##Build your own resume
 
 You can fork it and build your own resume quickly as follows:
 
@@ -12,6 +13,8 @@ You can fork it and build your own resume quickly as follows:
 * Checkout branch `gh-pages` and run `gulp`
 * Fill up your personal information to `data.js`
 * Commit and push, go [http://your_username.github.io/resume](http://your_username.github.io/resume) to check whether GitHub has finished building the pages :beer:
+
+##Bind subdomain
 
 Wanna to bind your own subdomain(such as `resume.hustlzp.com`)?
 
