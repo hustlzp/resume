@@ -14,9 +14,9 @@ You can fork it and build your own resume quickly as follows:
 * Fill up your personal information to `data.js`
 * Commit and push, go [http://your_username.github.io/resume](http://your_username.github.io/resume) to check whether GitHub has finished building the pages :beer:
 
-##Bind subdomain
+##Bind custom domain
 
-Wanna to bind your own subdomain(such as `resume.hustlzp.com`)?
+Wanna to bind your own custom domain(such as `resume.hustlzp.com`)?
 
 * Checkout branch `gh-pages`
 * Replace with your domain in file `CNAME`
