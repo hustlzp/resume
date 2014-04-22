@@ -79,7 +79,7 @@ module.exports = {
       desc: '中英翻译助手。',
       link: 'http://www.transy.org',
       image: 'http://hustlzp-resume.qiniudn.com/transy.png',
-      tec: 'NodeJS / MongoDB',
+      tec: 'Node.js / MongoDB',
       source: 'https://github.com/hustlzp/transy'
     },
     {
@@ -115,7 +115,7 @@ module.exports = {
       degree: '55'
     },
     {
-      name: 'NodeJS',
+      name: 'Node.js',
       degree: '40'
     },
     {
