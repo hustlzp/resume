@@ -3,7 +3,7 @@ Resume
 
 http://resume.hustlzp.com
 
-My online resume, built with NodeJS and served by GitHub.
+My online resume, built with NodeJS and served by GitHub Pages.
 
 You can fork it and build your own resume quickly as the following steps:
 
