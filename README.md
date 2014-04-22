@@ -4,6 +4,13 @@ http://resume.hustlzp.com
 
 My online resume, built with Node.js and served by GitHub Pages.
 
+* Separate resume's data & structure as `data.js` & `index.jade`
+* Use Gulp to compile `index.jade` to `index.html` whenever files change
+* Use Bower to manage font-end packages
+* Auto generate resume's last update time
+* The gulp process won't crash when error occurs
+* Write errors to index.html for the ease of debugging
+
 ##Build your own resume
 
 You can fork it and build your own resume quickly as follows:
