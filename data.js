@@ -100,11 +100,10 @@ module.exports = {
     },
     {
       title: 'AOD',
-      desc: 'Demo for AOD Company.',
-      link: 'http://hustlzp.github.io/aod',
+      desc: 'Website for AOD Company.',
+      link: 'http://182.92.129.224:1314/',
       image: 'http://hustlzp-resume.qiniudn.com/aod.png',
-      tec: 'HTML / CSS / JavaScript',
-      source: 'https://github.com/hustlzp/aod/tree/gh-pages'
+      tec: 'RoR 4 / MySQL'
     }
   ],
 
