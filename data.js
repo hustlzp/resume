@@ -22,7 +22,7 @@ module.exports = {
   city_image: 'http://hustlzp-resume.qiniudn.com/shanghai.gif',
   expectations: [
     '城市：上海',
-    '职位：Web后端开发工程师',
+    '岗位：Web开发攻城狮',
     '公司产品的价值观与个人价值观没有严重分歧',
     '有神一样的队友，能够得到快速成长',
     '开明、活跃、默契的团队氛围',
