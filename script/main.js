@@ -3,9 +3,9 @@
   // return false means not IE or IE.version >= 10,
   // otherwise means IE.version
   function checkIE() {
-    var v = 3;
-    var div = document.createElement('div');
-    var all = div.getElementsByTagName('i');
+    var v = 3,
+      div = document.createElement('div'),
+      all = div.getElementsByTagName('i');
 
     while (true) {
       v++;
@@ -39,6 +39,8 @@
       $('.loader').hide();
 
       $('.project').each(function (index) {
+        var maxHeight = 0;
+
         $(this).css({
           'display': 'block',
           'left': lefts[index % 3] + 'px',
@@ -49,7 +51,6 @@
         tops[index % 3] += $(this).height() + v_gap;
 
         // Set parent wap height
-        var maxHeight = 0;
         for (var i = 0; i < tops.length; i++) {
           if (tops[i] > maxHeight) {
             maxHeight = tops[i];
