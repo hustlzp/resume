@@ -1,4 +1,23 @@
 (function ($, imagesLoaded) {
+  // Check IE version
+  // return false means not IE or IE.version >= 10,
+  // otherwise means IE.version
+  function checkIE() {
+    var v = 3;
+    var div = document.createElement('div');
+    var all = div.getElementsByTagName('i');
+
+    while (true) {
+      v++;
+      div.innerHTML = '<!--[if gt IE ' + v + ']><i></i><![endif]-->';
+      if (!all[0]) {
+        break;
+      }
+    }
+
+    return (v > 4) ? v : false;
+  }
+
   // Water fall layout
   function waterfall() {
     var width = 308,
@@ -42,7 +61,15 @@
   }
 
   $(function () {
+    var ieVersion = checkIE();
+
+    // Redirect to Browse Happy when IE.version < 8
+    if (ieVersion && ieVersion < 8) {
+      window.location = 'http://browsehappy.com/';
+    }
+
     $('.contacts a').tooltip();
+
     waterfall();
   });
 })($, imagesLoaded);
