@@ -39,16 +39,17 @@
       $('.loader').hide();
 
       $('.project').each(function (index) {
-        var maxHeight;
+        var maxHeight,
+          column = index % 3;
 
         $(this).css({
           'display': 'block',
-          'left': lefts[index % 3] + 'px',
-          'top': tops[index % 3] + 'px'
+          'left': lefts[column] + 'px',
+          'top': tops[column] + 'px'
         });
 
         // Accumulate height
-        tops[index % 3] += $(this).height() + v_gap;
+        tops[column] += $(this).height() + v_gap;
 
         // Set parent's height
         maxHeight = Math.max.apply(null, tops);
