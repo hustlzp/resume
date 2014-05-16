@@ -39,7 +39,7 @@
       $('.loader').hide();
 
       $('.project').each(function (index) {
-        var maxHeight = 0;
+        var maxHeight;
 
         $(this).css({
           'display': 'block',
@@ -50,12 +50,8 @@
         // Accumulate height
         tops[index % 3] += $(this).height() + v_gap;
 
-        // Set parent wap height
-        for (var i = 0; i < tops.length; i++) {
-          if (tops[i] > maxHeight) {
-            maxHeight = tops[i];
-          }
-        }
+        // Set parent's height
+        maxHeight = Math.max.apply(null, tops);
         $('.project-wap').css('height', maxHeight + 'px');
       });
     });
