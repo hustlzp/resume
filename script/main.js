@@ -1,10 +1,10 @@
-(function ($, imagesLoaded) {
+(function () {
   $(function () {
     var ieVersion = checkIE();
 
     // Redirect to Browse Happy when IE.version < 8
     if (ieVersion && ieVersion < 8) {
-      window.location = 'http://browsehappy.com/';
+      window.location = 'http://browsehappy.com';
     }
 
     $('.contacts a').tooltip();
@@ -73,4 +73,4 @@
       });
     });
   }
-})($, imagesLoaded);
+})();

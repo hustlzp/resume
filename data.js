@@ -84,7 +84,7 @@ module.exports = {
     },
     {
       title: 'Optico',
-      desc: 'Website for Optico Company.',
+      desc: 'Website for Optico Communincation.',
       link: 'http://www.optico.com.cn',
       image: 'http://hustlzp-resume.qiniudn.com/optico.png',
       tec: 'Flask / MySQL',
@@ -100,7 +100,7 @@ module.exports = {
     },
     {
       title: 'AOD',
-      desc: 'Website for AOD Company.',
+      desc: '3D打印公司AOD官网。',
       link: 'http://182.92.129.224:1314/',
       image: 'http://hustlzp-resume.qiniudn.com/aod.png',
       tec: 'RoR 4 / MySQL'
