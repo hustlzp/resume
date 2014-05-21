@@ -11,7 +11,7 @@ gulp.task('build', function () {
   var locals;
 
   try {
-    locals = yaml.safeLoad(fs.readFileSync('./' + dataFile, 'utf8'));
+    locals = yaml.safeLoad(fs.readFileSync(dataFile, 'utf8'));
   } catch (e) {
     logError(e);
     return;
