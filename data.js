@@ -1,9 +1,4 @@
-var date = new Date();
-
 module.exports = {
-  // 输出友好格式的HTML
-  pretty: true,
-
   // 基本信息
   cn_name: '刘志鹏',
   en_name: 'hustlzp',
@@ -15,8 +10,6 @@ module.exports = {
   code: 'https://github.com/hustlzp/resume',
   // banner背景图片
   bg: 'http://hustlzp-resume.qiniudn.com/sea.jpg',
-  // 页面最后更新时间
-  update: date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate(),
 
   // 求职意向
   city_image: 'http://hustlzp-resume.qiniudn.com/shanghai.gif',
