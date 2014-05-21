@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.4.0",
   "description": "My online resume, lovely build with Node, Jade and YAML.",
-  "main": "gene.js",
+  "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "~3.6.1",
