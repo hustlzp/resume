@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "My online resume, lovely build with Node and Jade.",
   "main": "gene.js",
   "dependencies": {},
