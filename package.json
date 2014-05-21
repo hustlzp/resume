@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "version": "0.4.0",
-  "description": "My online resume, lovely build with Node and Jade.",
+  "description": "My online resume, lovely build with Node, Jade and YAML.",
   "main": "gene.js",
   "dependencies": {},
   "devDependencies": {
