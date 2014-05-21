@@ -47,41 +47,41 @@ projects:
     desc: 3D打印团队“乐创”官网。
     link: http://www.thu3d.com
     image: http://hustlzp-resume.qiniudn.com/lemaker.jpg
-    tec: Flask / MySQL / Redis
+    stack: Flask / MySQL / Redis
 
   - title: 西窗烛
     desc: 品味传统文学之美。
     link: http://www.xichuangzhu.com
     image: http://hustlzp-resume.qiniudn.com/xcz.jpg
-    tec: Flask / MySQL
+    stack: Flask / MySQL
     source: https://github.com/hustlzp/xichuangzhu
 
   - title: Transy
     desc: 中英翻译助手。
     link: http://www.transy.org
     image: http://hustlzp-resume.qiniudn.com/transy.png
-    tec: Node.js / MongoDB
+    stack: Node.js / MongoDB
     source: https://github.com/hustlzp/transy
 
   - title: Optico
     desc: Website for Optico Communincation.
     link: http://www.optico.com.cn
     image: http://hustlzp-resume.qiniudn.com/optico.png
-    tec: Flask / MySQL
+    stack: Flask / MySQL
     source: https://github.com/hustlzp/optico
 
   - title: YProgrammer
     desc: 分享优质Web开发资源。
     link: http://www.yprogrammer.com
     image: http://hustlzp-resume.qiniudn.com/yp.png
-    tec: Django / MySQL
+    stack: Django / MySQL
     source: https://github.com/hustlzp/yprogrammer
 
   - title: AOD
     desc: 3D打印公司AOD官网。
     link: http://182.92.129.224:1314/
     image: http://hustlzp-resume.qiniudn.com/aod.png
-    tec: RoR 4 / MySQL
+    stack: RoR 4 / MySQL
 
 # 技能
 skills:
