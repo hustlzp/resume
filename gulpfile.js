@@ -7,6 +7,7 @@ var dataFile = 'data.yaml';
 var jadeFile = 'index.jade';
 var htmlFile = 'index.html';
 
+// 将data.yaml和index.jade编译为index.html
 gulp.task('build', function () {
   var locals;
 
@@ -17,7 +18,7 @@ gulp.task('build', function () {
     return;
   }
 
-  // 输出友好格式的HTML
+  // 输出未压缩的HTML
   locals.pretty = true;
 
   // 页面最后更新时间
@@ -41,10 +42,12 @@ gulp.task('build', function () {
   });
 });
 
+// 源文件变动时，触发编译
 gulp.task('watch', function () {
   gulp.watch([jadeFile, dataFile], ['build']);
 });
 
+// gulp运行时触发一次编译，然后开启监控进程
 gulp.task('default', ['build', 'watch']);
 
 /**
