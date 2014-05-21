@@ -5,7 +5,7 @@ http://resume.hustlzp.com
 My online resume, built with Node.js and served by GitHub Pages.
 
 * Separate resume's data & structure as `data.yaml` & `index.jade`
-* Use gulp to compile `index.jade` to `index.html` whenever `data.yaml` or `index.jade` changes
+* Compile `index.jade` to `index.html` when `data.yaml` or `index.jade` changes
 * Auto generate resume's last update time
 * The gulp process won't crash when error occurs
 * Write errors to index.html for the ease of debugging
