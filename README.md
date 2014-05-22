@@ -4,8 +4,8 @@ http://resume.hustlzp.com
 
 My online resume, built with Node.js and served by GitHub Pages.
 
-* Separate resume's data & structure as `data.yaml` & `index.jade`
-* Compile `index.jade` to `index.html` when `data.yaml` or `index.jade` changes
+* Separate resume's data & structure as `data.yml` & `index.jade`
+* Compile `index.jade` to `index.html` when `data.yml` or `index.jade` changes
 * Auto generate resume's last update time
 * Write errors to index.html for the ease of debugging
 
@@ -16,7 +16,7 @@ You can fork it and build your own resume quickly as follows:
 * Fork and clone
 * `npm install && sudo npm install -g gulp`
 * Checkout branch `gh-pages` and run `gulp`
-* Fill up your personal information to `data.yaml`
+* Fill up your personal information to `data.yml`
 * Commit and push, go [http://your_username.github.io/resume](http://your_username.github.io/resume) to check whether GitHub has finished building the pages :beer:
 
 ##Bind custom domain

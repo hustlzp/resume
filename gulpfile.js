@@ -3,11 +3,11 @@ var jade = require('jade');
 var gulp = require('gulp');
 var yaml = require('js-yaml');
 
-var dataFile = 'data.yaml';
+var dataFile = 'data.yml';
 var jadeFile = 'index.jade';
 var htmlFile = 'index.html';
 
-// 将data.yaml和index.jade编译为index.html
+// 将data.yml和index.jade编译为index.html
 gulp.task('build', function () {
   var locals;
 
