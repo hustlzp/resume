@@ -46,7 +46,7 @@ body
       .col-xs-12
         h2.text-center 作品
     .project-wap
-      img.loader(src='image/ajax-loader.gif', alt='Loader')
+      img.loader(src='image/ajax-loader.gif', alt='Loader', data-no-retina)
       each p in projects
         .project.thumbnail
           a(href=p.link, title=p.title, target='_blank')
