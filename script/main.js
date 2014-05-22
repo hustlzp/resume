@@ -10,10 +10,6 @@
     $('.contacts a').tooltip();
 
     waterfall();
-
-    // Spoof the browser into thinking it is Retina
-    // comment the next line out to make sure it works without retina
-    window.devicePixelRatio = 2;
   });
 
   /**
