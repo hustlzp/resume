@@ -86,16 +86,16 @@ projects:
 # 技能
 skills:
   - name: Python
-    degree: 55
-
-  - name: Node.js
-    degree: 40
-
-  - name: JavaScript
     degree: 45
 
+  - name: Node.js
+    degree: 35
+
+  - name: JavaScript
+    degree: 40
+
   - name: HTML / CSS
-    degree: 55
+    degree: 45
 
   - name: Ruby on Rails
     degree: 20
