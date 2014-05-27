@@ -8,7 +8,6 @@
 
   $(function () {
     $('.contacts a').tooltip();
-
     waterfall();
   });
 
@@ -32,11 +31,12 @@
 
     // Wait for all images loaded
     $('.project-wap').imagesLoaded(function () {
+      var maxHeight;
+
       $('.loader').hide();
 
       $('.project').each(function (index) {
-        var maxHeight,
-          column = index % 3;
+        var column = index % 3;
 
         $(this).css({
           'display': 'block',
@@ -46,11 +46,11 @@
 
         // Accumulate height
         tops[column] += $(this).height() + v_gap;
-
-        // Set parent's height
-        maxHeight = Math.max.apply(null, tops);
-        $('.project-wap').css('height', maxHeight + 'px');
       });
+
+      // Set parent's height
+      maxHeight = Math.max.apply(null, tops);
+      $('.project-wap').css('height', maxHeight + 'px');
     });
   }
 })();
