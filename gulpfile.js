@@ -2,6 +2,7 @@ var fs = require('fs');
 var jade = require('jade');
 var gulp = require('gulp');
 var yaml = require('js-yaml');
+var moment = require('moment');
 
 var dataFile = 'data.yml';
 var jadeFile = 'index.jade';
@@ -23,7 +24,7 @@ gulp.task('build', function () {
 
   // 页面最后更新时间
   var date = new Date();
-  locals.update = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+  locals.update = moment().format("YYYY-MM-DD");
 
   jade.renderFile(jadeFile, locals, function (err, html) {
     if (err) {
@@ -37,7 +38,7 @@ gulp.task('build', function () {
         return;
       }
 
-      console.log(new Date() + ' - SAVED');
+      console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - SAVED');
     });
   });
 });
@@ -54,6 +55,6 @@ gulp.task('default', ['build', 'watch']);
  * 将错误信息记录到htmlFile，以方便调试
  */
 function logError(err) {
-  console.log(new Date() + ' - ERROR');
+  console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - ERROR');
   fs.writeFile(htmlFile, err);
 }
