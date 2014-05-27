@@ -1,9 +1,10 @@
 (function () {
   $(function () {
-    var ieVersion = checkIE();
+    // var ieVersion = checkIE();
 
     // Redirect to Browse Happy when IE.version < 8
-    if (ieVersion && ieVersion < 8) {
+    // if (ieVersion && ieVersion < 8) {
+    if(!Modernizr.borderimage) {
       window.location = 'http://browsehappy.com';
     }
 
