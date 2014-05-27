@@ -1,6 +1,7 @@
 (function () {
-  // Ban old browsers via CSS3 border-image detect,
-  // see: http://caniuse.com/#search=border-image
+  // Ban old browsers via CSS3 border-image detect.
+  // [1] http://caniuse.com/#search=border-image
+  // [2] http://www.w3schools.com/cssref/css3_browsersupport.asp
   if(!Modernizr.borderimage) {
     window.location = 'http://browsehappy.com';
   }
