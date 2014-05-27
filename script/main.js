@@ -1,37 +1,15 @@
 (function () {
+  // Ban old browsers via CSS3 border-image detect,
+  // see: http://caniuse.com/#search=border-image
   if(!Modernizr.borderimage) {
     window.location = 'http://browsehappy.com';
   }
 
   $(function () {
-    // var ieVersion = checkIE();
-
-    // Redirect to Browse Happy when IE.version < 8
-    // if (ieVersion && ieVersion < 8) {
     $('.contacts a').tooltip();
 
     waterfall();
   });
-
-  /**
-   * Check IE version.
-   * @returns {Number|Boolean} IE.version, false means not IE or IE.version >= 10
-   */
-  function checkIE() {
-    var v = 3,
-      div = document.createElement('div'),
-      all = div.getElementsByTagName('i');
-
-    while (true) {
-      v++;
-      div.innerHTML = '<!--[if gt IE ' + v + ']><i></i><![endif]-->';
-      if (!all[0]) {
-        break;
-      }
-    }
-
-    return (v > 4) ? v : false;
-  }
 
   /**
    * Waterfall layout.
