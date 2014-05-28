@@ -16,9 +16,9 @@
    */
   function waterfall() {
     var width = 308,
-      h_gap = 30,
-      v_gap = 30,
-      lefts = [0, width + h_gap, 2 * (width + h_gap)],
+      hGap = 30,
+      vGap = 30,
+      lefts = [0, width + hGap, 2 * (width + hGap)],
       tops = [0, 0, 0];
 
     // Init css style
@@ -45,7 +45,7 @@
         });
 
         // Accumulate height
-        tops[column] += $(this).height() + v_gap;
+        tops[column] += $(this).height() + vGap;
       });
 
       // Set parent's height
