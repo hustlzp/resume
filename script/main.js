@@ -22,11 +22,9 @@
       tops = [0, 0, 0];
 
     // Init css style
-    $('.project').each(function (index) {
-      $(this).css({
-        'width': width + 'px',
-        'display': 'none'
-      });
+    $('.project').css({
+      'width': width + 'px',
+      'display': 'none'
     });
 
     // Wait for all images loaded
