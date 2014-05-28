@@ -18,10 +18,12 @@ head
 body
   a(href=code, target='_blank')
     img(style='position: absolute; top: 0; right: 0; border: 0;', src='https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png')
+
   .banner(style="background-image: url(" + bg + ")")
     img.avatar(src=avatar, alt='hustlzp')
     h1.text-center.name= en_name
     p.text-center.slogan= motto
+
   .container.content
     .row
       .col-xs-12.text-center
@@ -32,6 +34,7 @@ body
                 img(src=contact.image, alt=contact.title)
     .col-xs-8.col-xs-offset-2
       p.intro= desc
+
     .row
       .col-xs-12
         h2.text-center 求职意向
@@ -42,6 +45,7 @@ body
         ul
           each e in expectations
             li= e
+
     .row
       .col-xs-12
         h2.text-center 作品
@@ -59,6 +63,7 @@ body
             if p.source
               a.source(href=p.source, target='_blank')
                 i.fa.fa-github
+
     .row
       .col-xs-12
         h2.text-center 技能
@@ -70,6 +75,7 @@ body
               h3= skill.name
               .progress
                 .progress-bar.progress-bar-info(style='width: ' + skill.degree + '%')
+
     .row
       .col-xs-12
         h2.text-center 阅读
@@ -80,6 +86,7 @@ body
           a(href=book.link, target='_blank', class='book')
             img.img-responsive(src=book.image, alt=book.title)
             div.quote= book.quote
+
     .row
       .col-xs-12
         h2.text-center 教育
@@ -88,6 +95,7 @@ body
         .row.edu-item
           .col-xs-5.text-right.time= edu.period
           .col-xs-7= edu.title
+
   .footer
     .container
       .version Last update: #{update}
