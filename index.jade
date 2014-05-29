@@ -1,7 +1,7 @@
 doctype html
 
 head
-  title #{cn_name}的个人简历
+  title #{cnName}的个人简历
   meta(http-equiv="Content-Type", content="text/html;charset=utf-8")
   link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
   link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css")
@@ -21,7 +21,7 @@ body
 
   .banner(style="background-image: url(" + bg + ")")
     img.avatar(src=avatar, alt='hustlzp')
-    h1.text-center.name= en_name
+    h1.text-center.name= enName
     p.text-center.slogan= motto
 
   .container.content
@@ -40,7 +40,7 @@ body
         h2.text-center 求职意向
     .row.expectation
       .col-xs-6
-        img(src=city_image, class='map img-responsive')
+        img(src=cityImage, class='map img-responsive')
       .col-xs-6
         ul
           each e in expectations
@@ -99,4 +99,4 @@ body
   .footer
     .container
       .version Last update: #{update}
-      .copyright 2014 © by #{en_name}
+      .copyright 2014 © by #{enName}
