@@ -24,6 +24,8 @@ gulp.task('build', function () {
 
   // 页面最后更新时间
   locals.update = moment().format("YYYY-MM-DD");
+  // 当前年份
+  locals.year = moment().format("YYYY");
 
   jade.renderFile(jadeFile, locals, function (err, html) {
     if (err) {
