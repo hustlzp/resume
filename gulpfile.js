@@ -10,24 +10,21 @@ var htmlFile = 'index.html';
 
 // 将data.yml和index.jade编译为index.html
 gulp.task('build', function () {
-  var locals;
+  var data;
 
   try {
-    locals = yaml.safeLoad(fs.readFileSync(dataFile, 'utf8'));
+    data = yaml.safeLoad(fs.readFileSync(dataFile, 'utf8'));
   } catch (e) {
     logError(e);
     return;
   }
 
   // 输出未压缩的HTML
-  locals.pretty = true;
+  data.pretty = true;
+  data.updateTime = moment().format("YYYY-MM-DD");
+  data.currentYear = moment().format("YYYY");
 
-  // 页面最后更新时间
-  locals.updateTime = moment().format("YYYY-MM-DD");
-  // 当前年份
-  locals.currentYear = moment().format("YYYY");
-
-  jade.renderFile(jadeFile, locals, function (err, html) {
+  jade.renderFile(jadeFile, data, function (err, html) {
     if (err) {
       logError(err);
       return;
