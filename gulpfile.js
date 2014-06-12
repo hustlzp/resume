@@ -16,7 +16,7 @@ var renderFile = Promise.promisify(jade.renderFile);
 // 将data.yml和index.jade编译为index.html
 gulp.task('build', function () {
   fs.readFileAsync(dataFile, "utf8").then(function (content) {
-    return yaml.safeLoad(fs.readFileSync(dataFile, 'utf8'));
+    return yaml.safeLoad(content);
   }).then(function (data) {
       // 输出未压缩的HTML
       data.pretty = true;
