@@ -18,19 +18,19 @@ gulp.task('build', function () {
   fs.readFileAsync(dataFile, "utf8").then(function (content) {
     return yaml.safeLoad(content);
   }).then(function (data) {
-      // 输出未压缩的HTML
-      data.pretty = true;
-      data.updateTime = moment().format("YYYY-MM-DD");
-      data.currentYear = moment().format("YYYY");
-      return renderFile(jadeFile, data);
-    }).then(function (html) {
-      return fs.writeFileAsync(htmlFile, html);
-    }).then(function () {
-      console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - SAVED');
-    }).catch(function (err) {
-      console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - ERROR');
-      fs.writeFile(htmlFile, err);
-    });
+    // 输出未压缩的HTML
+    data.pretty = true;
+    data.updateTime = moment().format("YYYY-MM-DD");
+    data.currentYear = moment().format("YYYY");
+    return renderFile(jadeFile, data);
+  }).then(function (html) {
+    return fs.writeFileAsync(htmlFile, html);
+  }).then(function () {
+    console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - SAVED');
+  }).catch(function (err) {
+    console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - ERROR');
+    fs.writeFile(htmlFile, err);
+  });
 });
 
 // 源文件变动时，触发编译
