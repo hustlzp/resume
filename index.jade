@@ -25,19 +25,14 @@ body
     p.text-center.slogan= motto
 
   .container.content
-    .row
-      .col-xs-12.text-center
-        ul.contacts.list-inline
-          each contact in contacts
-            li
-              a(href=contact.link, target='_blank', title=contact.title)
-                img(src=contact.image, alt=contact.title)
-    .col-xs-8.col-xs-offset-2
-      p.intro= desc
+    ul.contacts.list-inline.text-center
+      each contact in contacts
+        li
+          a(href=contact.link, target='_blank', title=contact.title)
+            img(src=contact.image, alt=contact.title)
+    p.intro= desc
 
-    .row
-      .col-xs-12
-        h2.text-center 求职意向
+    h2.text-center 求职意向
     .row.expectation
       .col-xs-6
         img(src=cityImage, class='map img-responsive')
@@ -46,9 +41,7 @@ body
           each e in expectations
             li= e
 
-    .row
-      .col-xs-12
-        h2.text-center 作品
+    h2.text-center 作品
     .project-wap
       img.loader(src='image/ajax-loader.gif', alt='Loader')
       each p in projects
@@ -64,9 +57,7 @@ body
               a.source(href=p.source, target='_blank')
                 i.fa.fa-github
 
-    .row
-      .col-xs-12
-        h2.text-center 技能
+    h2.text-center 技能
     .row
       .col-xs-10.col-xs-offset-1
         .row
@@ -76,9 +67,7 @@ body
               .progress
                 .progress-bar.progress-bar-info(style='width: ' + skill.degree + '%')
 
-    .row
-      .col-xs-12
-        h2.text-center 阅读
+    h2.text-center 阅读
     .row.books
       each book, index in books
         -var cls = (index === 0) ? 'col-xs-2 col-xs-offset-1' : 'col-xs-2'
@@ -87,9 +76,7 @@ body
             img.img-responsive(src=book.image, alt=book.title)
             div.quote= book.quote
 
-    .row
-      .col-xs-12
-        h2.text-center 教育
+    h2.text-center 教育
     .edu-item-wap
       each edu in educations
         .row.edu-item
