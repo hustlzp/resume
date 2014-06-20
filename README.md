@@ -21,7 +21,7 @@ You can fork it and build your own resume quickly as follows:
 
 ##Bind custom domain
 
-Wanna to bind your own custom domain(such as `resume.hustlzp.com`)?
+Wanna to bind your own custom domain?
 
 * Checkout branch `gh-pages`
 * Replace with your domain in file `CNAME`
