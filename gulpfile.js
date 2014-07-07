@@ -28,7 +28,7 @@ gulp.task('build', function () {
   }).then(function () {
     console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - SAVED');
   }).catch(function (err) {
-    console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - ERROR');
+    console.log(moment().format("YYYY-MM-DD HH:mm:ss") + ' - ERROR\n' + err);
     fs.writeFile(htmlFile, err);
   });
 });
