@@ -48,7 +48,7 @@ contacts:
 
   - title: hustlzp@qq.com
     link: mailto:hustlzp@qq.com
-    image: http://hustlzp-resume.qiniudn.com/email.png
+    image: /image/icons/email.png
     external: false
 
 # 作品
