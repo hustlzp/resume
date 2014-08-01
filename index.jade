@@ -27,8 +27,10 @@ body
     ul.contacts.list-inline.text-center
       each contact in contacts
         li
-          a(href=contact.link, target='_blank', title=contact.title)
+          -var target = contact.external ? '_blank' : '_self'
+          a(href=contact.link, target=target, title=contact.title)
             img(src=contact.image, alt=contact.title)
+
     p.intro= desc
 
     h2.text-center 求职意向

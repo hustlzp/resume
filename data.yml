@@ -29,21 +29,27 @@ contacts:
   - title: Blog
     link: http://hustlzp.com
     image: http://hustlzp-resume.qiniudn.com/blog.png
+    external: true
 
   - title: GitHub
     link: https://github.com/hustlzp
     image: http://hustlzp-resume.qiniudn.com/github.png
+    external: true
 
   - title: V2EX
     link: https://www.v2ex.com/member/hustlzp
     image: http://hustlzp-resume.qiniudn.com/v2ex.png
+    external: true
 
   - title: 豆瓣
     link: http://www.douban.com/people/hustlzp
     image: http://hustlzp-resume.qiniudn.com/douban.png
+    external: true
 
   - title: hustlzp@qq.com
+    link: mailto://hustlzp@qq.com
     image: http://hustlzp-resume.qiniudn.com/email.png
+    external: false
 
 # 作品
 projects:
