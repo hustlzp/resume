@@ -54,9 +54,13 @@ body
               a(href=p.link, target='_blank')= p.title
             p.desc= p.desc
             p.stack= p.stack
-            if p.source
-              a.source(href=p.source, target='_blank')
-                i.fa.fa-github
+            .icon-wap
+              if p.ios
+                a.icon.ios(href=p.ios, target='_blank')
+                  i.fa.fa-mobile
+              if p.source
+                a.icon.source(href=p.source, target='_blank')
+                  i.fa.fa-github
 
     h2.text-center 技能
     .row

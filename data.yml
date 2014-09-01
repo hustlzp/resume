@@ -65,6 +65,7 @@ projects:
     image: http://hustlzp-resume.qiniudn.com/xcz.jpg
     stack: Flask / MySQL
     source: https://github.com/hustlzp/xichuangzhu
+    ios: https://itunes.apple.com/cn/app/xi-chuang-zhu/id912139104
 
   - title: Transy
     desc: 中英翻译助手。
