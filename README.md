@@ -11,6 +11,9 @@ My online resume, built with Node.js and served by GitHub Pages.
 
 ##Usage
 
-* Fork and clone
-* npm install && sudo npm install -g gulp
-* Checkout branch gh-pages and run gulp
+```sh
+npm install
+sudo npm install -g gulp
+git checkout gh-pages
+gulp
+```
