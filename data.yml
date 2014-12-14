@@ -90,7 +90,7 @@ projects:
 
   - title: AOD
     desc: 3D打印公司AOD官网。
-    link: http://182.92.129.224:1314
+    link: http://www.aod3d.com
     image: http://hustlzp-resume.qiniudn.com/aod.png
     stack: RoR 4 / MySQL
 
